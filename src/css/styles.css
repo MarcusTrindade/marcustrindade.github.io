@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v22/HI_jiYsKILxRpg3hIP6sJ7fM7PqlOPHYvDP_W9O7GQTTbI1bQ10YVJg.woff2) format('woff2');
+}
+
+/* General CSS */
+* {
+  font-family: 'Source Code Pro', monospace;
+  background-color: #ec88df;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0;
+}
+
+/* Header */
+header {
+  height: 3rem;
+  margin: 0.2rem auto;
+  width: 100%;
+} 
+
+nav {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 78%;
+}
+
+nav li {
+  margin: 0 1rem 0 1rem;
+}
+
+nav a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  cursor: pointer;
+}
+
+
+/* About Me */
+#about-me {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0.2rem 0;
+  padding: 0;
+}
+
+#about-me h2 {
+  margin: 0;
+}
+
+#about-me img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.7rem;
+}
+
+
+/* Projects */
+#projects {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#projects h2{
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+#projects ul{
+  list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+  margin: 0 1.3rem;
+  padding: 0;
+}
+
+#projects ul li {
+  padding: 0.3rem;
+}
+
+#projects ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+
+/* Skills */
+.container-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+/* Footer */
+footer {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 2rem;
+  padding: 0;
+  text-align: center;
+}
+
+/* Medias */
+@media only screen and (max-width: 900px) {
+  
+  body {
+    margin: 0.1rem 1rem;
+  }
+
+  #about-me {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #about-me .container-imagem {
+    display: flex;
+    justify-content: center;
+  }
+
+  #about-me img {
+    width: 80%;
+  }
+}
